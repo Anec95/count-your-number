@@ -1,0 +1,128 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: -webkit-linear-gradient(top right, #03172b 0%, #021f2c 25%, #021f2c 50%, #062d3f 75%, #072e41  100%);
+}
+
+header {
+    height: 10vh;
+}
+
+h1 {
+    font-family: 'Neonderthaw';
+    font-size: 70px;
+    text-align: center;
+    word-spacing: 10px;
+    color: rgb(255, 16, 240);
+    font-variant: small-caps;
+}
+
+.reset-button {
+    position: absolute;
+    left: 4%;
+    top: 20vh;
+
+    width: 90px;
+    height: 30px;
+    font-variant: small-caps;
+    font-weight: bold;
+    background-color: transparent;
+    border: 3px solid #ffd600;
+    border-radius: 10px;
+}
+
+.fa-window-restore {
+    color: rgb(57,255,20);
+}
+
+.reset-button p {
+    display: inline;    
+    color: rgb(255, 16, 240);
+    padding-left: 5px;
+    margin: 0;
+}
+
+.reset-button:hover {
+    cursor: pointer;
+    border: 3px double rgb(255, 16, 240);
+    
+    transition: 0.5s;
+}
+
+.reset-button:hover .fa-window-restore {
+    color: #ffd600;
+}
+
+.reset-button:hover p {
+    color: rgb(57,255,20);
+}
+
+.counter-container {
+    display: grid;
+    grid-template-columns: 10vh 3fr 3fr 3fr 3fr 10vh;
+    grid-template-rows: repeat(5, 10vh);
+    margin: 8% 10% 0 10%;
+
+    
+    text-align: center;
+}
+
+.n-counter {
+    grid-column-start: 2;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 6;
+
+    font-size: 300px;
+    margin: 0;
+    padding-top: 40px;
+    font-family: 'Expletus Sans', 'Poor Story';
+    color: rgb(255, 16, 240);    
+    border: 5px double rgb(57,255,20);
+    border-radius: 10px;
+}
+
+.minus,
+.plus {
+    border-radius: 50%;
+    font-size: 80px;
+    color: rgb(255, 16, 240);
+    background-color: transparent;
+    border: none;
+    border: 3px double #FFFE37;
+}
+
+.minus {
+    position: relative;
+    right: -45px;
+    bottom: -40px;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin: 0;    
+}
+
+.plus {
+    position: relative;
+    left: -45px;
+    top: -40px;
+
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+}
+
+
+.minus:hover,
+.plus:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    color: #FFFE37;
+    border: 3px double rgb(255, 16, 240);
+}
