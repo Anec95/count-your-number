@@ -85,12 +85,12 @@ h1 {
     border-radius: 10px;
 }
 
-.minus,
+/* .minus,
 .minus-ten,
 .minus-hundred 
-/* .plus,
+.plus,
 .plus-ten,
-.plus-hundred */  {
+.plus-hundred  {
     border-radius: 50%;
     font-size: 80px;
     color: rgb(255, 16, 240);
@@ -110,18 +110,18 @@ h1 {
     grid-row-start: 5;
     grid-row-end: 6;
     margin: 0;    
-}
+} */
 
-.minus-ten,
+/* .minus-ten,
 .minus-hundred
-/* .plus-ten,
-.plus-hundred*/ { 
+.plus-ten,
+.plus-hundred { 
     font-size: 35px;
     font-weight: bold;
     font-family: 'Expletus Sans', 'Poor Story';
-}
+} */
 
-.minus-ten {
+/* .minus-ten {
     position: relative;
     right: -140px;
     bottom: -40px;
@@ -144,7 +144,7 @@ h1 {
     grid-row-start: 5;
     grid-row-end: 6;
     margin: 0;   
-}
+} */
 
 /* .plus {
     position: relative;
@@ -180,7 +180,7 @@ h1 {
     grid-row-end: 2;     
 } */
 
-.minus:hover,
+/* .minus:hover,
 .minus-ten:hover,
 .minus-hundred:hover,
 .plus:hover,
@@ -190,16 +190,76 @@ h1 {
     transition: 0.5s;
     color: #FFFE37;
     border: 3px double rgb(255, 16, 240);
+} */
+
+
+
+
+
+
+.minus-container {
+    position: relative;
+    right: -45px;
+    bottom: -40px;
+    width: 10vh;
+    height: 10vh;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
+.minus-one,
+.minus-ten,
+.minus-hundred{
+    border-radius: 50%;
+    color: rgb(255, 16, 240);
+    background-color: transparent;
+    border: none;
+    border: 3px double #FFFE37;
+    text-align: center;
+}
 
+.minus-one {
+    width: 10vh;
+    height: 10vh;
+    font-size: 80px;
+}
 
+.less {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 0 2.5vh 2.5vh;
+    padding-top: 20px;
+    rotate: -135deg;
+
+    left: 85px;
+    top: -170px;
+    width: 5vh;
+    height: 12vh;
+    display: none;
+}
+
+.minus-container:hover .less {    
+    display: block;
+}
+
+.minus-ten,
+.minus-hundred {
+    width: 5vh;
+    height: 5vh;
+    rotate: 135deg;
+    margin: 10px 0;
+}
 
 .plus-container {
     position: relative;
     left: -45px;
     top: -40px;
-    
+
     width: 10vh;
     height: 10vh;
     grid-column-start: 6;
@@ -235,7 +295,7 @@ h1 {
     rotate: 45deg;
 
     left: -41px;
-    top: -40px;
+    top: -40px; 
     width: 5vh;
     height: 12vh;
     display: none;
@@ -255,7 +315,10 @@ h1 {
 
 .plus-one:hover,
 .plus-ten:hover,
-.plus-hundred:hover {
+.plus-hundred:hover,
+.minus-one:hover,
+.minus-ten:hover,
+.minus-hundred:hover {
     cursor: pointer;
     transition: 0.5s;
     color: #FFFE37;
