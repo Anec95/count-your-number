@@ -18,15 +18,17 @@
                 <h1>Count your Number</h1>
             </header>
 
-            <button class="reset-button"><i class="fa fa-window-restore" aria-hidden="true"></i><p>reset</p></button>
+            <button id="buttonReset" class="reset-button"><i class="fa fa-window-restore" aria-hidden="true"></i><p>reset</p></button>
 
             <main>
                 <div class="counter-container">
-                    <button class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
-                    <div class="n-counter">7</div>
-                    <button class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <button id="buttonMinus" class="minus"><i class="fa fa-minus" aria-hidden="true"></i></button>
+                    <div id="numberContainer" class="n-counter"></div>
+                    <button id="buttonPlus" class="plus"><i class="fa fa-plus" aria-hidden="true"></i></button>
                 </div>
             </main>
             
+
+            <script src="index.js"></script>
         </body>
     </html>
