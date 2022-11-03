@@ -14,26 +14,42 @@ reset.onclick = function() {
     counter.textContent = 0;
 }
 
-plus.onclick = function() {
-    counter.textContent = Number(counter.textContent) + 1;
-};
+// plus.onclick = function() {
+//     counter.textContent = Number(counter.textContent) + 1;
+// };
 
-plus10.onclick = function() {
-    counter.textContent = Number(counter.textContent) + 10;
-};
+// plus10.onclick = function() {
+//     counter.textContent = Number(counter.textContent) + 10;
+// };
 
-plus100.onclick = function() {
-    counter.textContent = Number(counter.textContent) + 100;
-};
+// plus100.onclick = function() {
+//     counter.textContent = Number(counter.textContent) + 100;
+// };
 
-minus.onclick = function() {
-    counter.textContent = Number(counter.textContent) - 1;
-};
+// minus.onclick = function() {
+//     counter.textContent = Number(counter.textContent) - 1;
+// };
 
-minus10.onclick = function() {
-    counter.textContent = Number(counter.textContent) - 10;
-};
+// minus10.onclick = function() {
+//     counter.textContent = Number(counter.textContent) - 10;
+// };
 
-minus100.onclick = function() {
-    counter.textContent = Number(counter.textContent) - 100;
-};
+// minus100.onclick = function() {
+//     counter.textContent = Number(counter.textContent) - 100;
+// };
+
+function sum(addend) {
+    counter.textContent = Number(counter.textContent) + addend;
+}
+
+plus.onclick = () => sum(1);
+
+plus10.onclick = () => sum(10);
+
+plus100.onclick = () => sum(100);
+
+minus.onclick = () => sum(-1);
+
+minus10.onclick = () => sum(-10);
+
+minus100.onclick = () => sum(-100);
