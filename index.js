@@ -14,30 +14,6 @@ reset.onclick = function() {
     counter.textContent = 0;
 }
 
-// plus.onclick = function() {
-//     counter.textContent = Number(counter.textContent) + 1;
-// };
-
-// plus10.onclick = function() {
-//     counter.textContent = Number(counter.textContent) + 10;
-// };
-
-// plus100.onclick = function() {
-//     counter.textContent = Number(counter.textContent) + 100;
-// };
-
-// minus.onclick = function() {
-//     counter.textContent = Number(counter.textContent) - 1;
-// };
-
-// minus10.onclick = function() {
-//     counter.textContent = Number(counter.textContent) - 10;
-// };
-
-// minus100.onclick = function() {
-//     counter.textContent = Number(counter.textContent) - 100;
-// };
-
 function sum(addend) {
     counter.textContent = Number(counter.textContent) + addend;
 }
@@ -53,3 +29,35 @@ minus.onclick = () => sum(-1);
 minus10.onclick = () => sum(-10);
 
 minus100.onclick = () => sum(-100);
+
+function transparent(elem) {
+    elem.style.backgroundColor = "transparent";
+}
+
+function white(elem) {
+    elem.style.backgroundColor = "white";
+}
+
+plus.onmouseup = () => transparent(plus);
+
+plus.onmousedown = () => white(plus);
+
+plus10.onmouseup = () => transparent(plus10);
+
+plus10.onmousedown = () => white(plus10);
+
+plus100.onmouseup = () => transparent(plus100);
+
+plus100.onmousedown = () => white(plus100);
+
+minus.onmouseup = () => transparent(minus);
+
+minus.onmousedown = () => white(minus);
+
+minus10.onmouseup = () => transparent(minus10);
+
+minus10.onmousedown = () => white(minus10);
+
+minus100.onmouseup = () => transparent(minus100);
+
+minus100.onmousedown = () => white(minus100);
