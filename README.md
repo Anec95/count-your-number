@@ -6,4 +6,4 @@ Count Your Number is a web application that allows you to count numbers with a s
 Inside there are **six buttons** to increase or decrease the number put on the display and **one** to reset it back to 0.
 ```
 
-<img src="./assets/images/screenshot.png" alt="This is a preview of Count your Number">(https://count-your-number.netlify.app/)
+<a href="https://count-your-number.netlify.app/"><img src="./assets/images/screenshot.png" alt="This is a preview of Count your Number"></a>
