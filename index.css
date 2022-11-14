@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    height: 10vh;
+    height: 15vh;
 }
 
 h1 {
@@ -18,15 +18,44 @@ h1 {
     word-spacing: 10px;
     color: rgb(255, 16, 240);
     font-variant: small-caps;
+    margin: 0;
+}
+
+main {
+    height: 85vh;
+}
+
+.counter-container {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    left: 10vw;
+    top: 5vh;
+
+    color: rgb(255, 16, 240);    
+    border: 5px double rgb(57,255,20);
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+#numberContainer {
+    position: absolute;
+    width: 78vw;
+    margin: 35vh 1vw 0 1vw;    
+    top: -125px;
+    font-size: 200px;
+    font-family: 'Expletus Sans', 'Poor Story';
+    text-align: center;
 }
 
 .reset-button {
     position: absolute;
-    left: 4%;
-    top: 20vh;
+    margin-left: 50%;
+    left: -5vh;
+    top: -40px;
 
     width: 90px;
-    height: 30px;
+    height: 25px;
     font-variant: small-caps;
     font-weight: bold;
     background-color: transparent;
@@ -60,154 +89,12 @@ h1 {
     color: rgb(57,255,20);
 }
 
-.counter-container {
-    display: grid;
-    grid-template-columns: 10vh 3fr 3fr 3fr 3fr 10vh;
-    grid-template-rows: repeat(5, 10vh);
-    margin: 8% 10% 0 10%;
-
-    
-    text-align: center;
-}
-
-.n-counter {
-    grid-column-start: 2;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 6;
-
-    font-size: 300px;
-    margin: 0;
-    padding-top: 40px;
-    font-family: 'Expletus Sans', 'Poor Story';
-    color: rgb(255, 16, 240);    
-    border: 5px double rgb(57,255,20);
-    border-radius: 10px;
-}
-
-/* .minus,
-.minus-ten,
-.minus-hundred 
-.plus,
-.plus-ten,
-.plus-hundred  {
-    border-radius: 50%;
-    font-size: 80px;
-    color: rgb(255, 16, 240);
-    background-color: transparent;
-    border: none;
-    border: 3px double #FFFE37;
-    text-align: center;
-}
-
-.minus {
-    position: relative;
-    right: -45px;
-    bottom: -40px;
-
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    margin: 0;    
-} */
-
-/* .minus-ten,
-.minus-hundred
-.plus-ten,
-.plus-hundred { 
-    font-size: 35px;
-    font-weight: bold;
-    font-family: 'Expletus Sans', 'Poor Story';
-} */
-
-/* .minus-ten {
-    position: relative;
-    right: -140px;
-    bottom: -40px;
-    font-size: 45px; 
-
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    margin: 0;   
-}
-
-.minus-hundred {
-    position: relative;
-    right: -45px;
-    bottom: 55px;
-
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    margin: 0;   
-} */
-
-/* .plus {
-    position: relative;
-    left: -45px;
-    top: -40px;
-
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;    
-}
-
-.plus-ten {
-    position: relative;
-    left: -140px;
-    top: -40px;
-    font-size: 45px;    
-
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;   
-}
-
-.plus-hundred {
-    position: relative;
-    left: -45px;
-    top: 55px;
-
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 2;     
-} */
-
-/* .minus:hover,
-.minus-ten:hover,
-.minus-hundred:hover,
-.plus:hover,
-.plus-ten:hover,
-.plus-hundred:hover {
-    cursor: pointer;
-    transition: 0.5s;
-    color: #FFFE37;
-    border: 3px double rgb(255, 16, 240);
-} */
-
-
-
-
-
-
 .minus-container {
-    position: relative;
-    right: -45px;
-    bottom: -40px;
+    position: absolute;
+    left: -45px;
+    bottom: -42px;
     width: 10vh;
     height: 10vh;
-
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6;
 }
 
 .minus-one,
@@ -218,7 +105,7 @@ h1 {
     background-color: transparent;
     border: none;
     border: 3px double #FFFE37;
-    text-align: center;
+    align-content: center;
 }
 
 .minus-one {
@@ -256,9 +143,9 @@ h1 {
 }
 
 .plus-container {
-    position: relative;
-    left: -45px;
-    top: -40px;
+    position: absolute;
+    right: -46px;
+    top: -48px;
 
     width: 10vh;
     height: 10vh;
@@ -324,3 +211,165 @@ h1 {
     color: #FFFE37;
     border: 3px double rgb(255, 16, 240);
 }
+
+
+/* RESPONSIVE */
+
+ /* @media only screen and (max-width: 500px) {
+    h1 {
+        font-size: 25px;
+    }
+    
+    .reset-button {
+        top: 12vh;
+    }
+    
+    .counter-container {
+        grid-template-columns: 5vh 3fr 3fr 3fr 3fr 5vh;
+        grid-template-rows: repeat(5, 10vh);
+        margin: 30% 3% 0 3%;
+    }
+    
+    .n-counter {
+        padding-top: 30%;
+    }
+    
+    .minus-container {
+        right: -2px;
+        bottom: -30px;
+    }
+    
+    .minus-one {
+        font-size: 55px;
+    }
+    
+    .less {
+        left: 65px;
+        top: -130px;
+    }
+    
+    .minus-ten,
+    .minus-hundred,
+    .plus-ten,
+    .plus-hundred {
+        font-size: 10px;
+    }
+    
+    .plus-container {
+        left: -35px;
+        top: -35px;
+    }
+    
+    .plus-one {
+        width: 10vh;
+        height: 10vh;
+        font-size: 60px;
+    }
+    
+    .more {
+        left: -28px;
+        top: -32px;
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 700px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    .reset-button {
+        top: 15vh;
+    }
+    
+    .counter-container {
+        margin: 15% 1% 0 1%;
+    }
+    
+    .minus-container {
+        right: -38px;
+        bottom: -32px;
+    }
+    
+    .minus-one {
+        font-size: 8.5vh;
+    }
+    
+    .less {
+        left: 75px;
+        top: -140px;
+    }
+    
+    .minus-ten,
+    .minus-hundred,
+    .plus-ten,
+    .plus-hundred {
+        font-size: 11px;
+    }
+    
+    .plus-container {
+        left: -38px;
+        top: -37px;
+    }
+    
+    .plus-one {
+        font-size: 9vh;
+    }
+    
+    .more {
+        left: -30px;
+        top: -32px;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+    
+    .reset-button {
+        top: 15vh;
+    }
+    
+    .counter-container {
+        margin: 15% 1% 0 1%;
+    }
+    
+    .n-counter {
+        padding: 15vh;
+    }
+    
+    .minus-container {
+        right: -60px;
+        bottom: -55px;
+    }
+    
+    .minus-one {
+        font-size: 9vh;
+    }
+    
+    .less {
+        left: 125px;
+        top: -230px;
+    }
+    
+    .minus-ten,
+    .minus-hundred,
+    .plus-ten,
+    .plus-hundred {
+        font-size: 15px;
+    }
+    
+    .plus-container {
+        left: -60px;
+        top: -55px;
+    }
+    
+    .plus-one {
+        font-size: 9vh;
+    }
+    
+    .more {
+        left: -60px;
+        top: -38px;
+    }
+} */
