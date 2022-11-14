@@ -9,5 +9,5 @@ Inside there are **six buttons** to increase or decrease the number put on the d
 <a href="https://count-your-number.netlify.app/" target="_blank"><img src="./assets/images/screenshot.png" alt="This is a preview of Count your Number"></a>
 
 ```
-To go see the web app and try out its features click on the [LINK]([https://lorenzoneri.com](https://count-your-number.netlify.app/)) or image.
+To go see the web app and try out its features click on the [LINK]([https://count-your-number.netlify.app/]) or image.
 ```
