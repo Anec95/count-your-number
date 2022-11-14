@@ -21,7 +21,12 @@ function sum(addend) {
 }
 
 function checkStyle() {
-    if (counter.textContent >= 100000 && counter.textContent <= 999999) {
+    if (counter.textContent >= 1000 && counter.textContent <= 99999) {
+        if (screen.width <= 500) {
+            counter.style.fontSize = "50px";
+        }
+    }
+    else if (counter.textContent >= 100000 && counter.textContent <= 999999) {
         if (screen.width <= 500) {
             counter.style.fontSize = "50px";
         } else if (screen.width >= 1001) {
