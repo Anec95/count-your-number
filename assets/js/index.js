@@ -21,20 +21,23 @@ function sum(addend) {
 }
 
 function checkStyle() {
-    if (counter.textContent >= 1000 && counter.textContent <= 99999) {
+    if (counter.textContent >= 1000 && counter.textContent <= 99999 ||
+        counter.textContent <= -1000 && counter.textContent >= -99999) {
         if (screen.width <= 500) {
-            counter.style.fontSize = "50px";
+            counter.style.fontSize = "90px";
         }
     }
-    else if (counter.textContent >= 100000 && counter.textContent <= 999999) {
+    else if (counter.textContent >= 100000 && counter.textContent <= 999999 ||
+             counter.textContent <= -100000 && counter.textContent >= -999999) {
         if (screen.width <= 500) {
-            counter.style.fontSize = "50px";
+            counter.style.fontSize = "70px";
         } else if (screen.width >= 1001) {
             counter.style.fontSize = "250px";
         } else {
             counter.style.fontSize = "200px";
         }
-    } else if (counter.textContent >= 1000000) {
+    } else if (counter.textContent >= 1000000 ||
+               counter.textContent <= -1000000) {
         if (screen.width <= 500) {
             counter.style.fontSize = "50px";
         } else if (screen.width >= 1001) {
