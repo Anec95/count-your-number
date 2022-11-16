@@ -48,6 +48,7 @@ let plus10 = document.getElementsByClassName("plus-ten")[0];
 let plus100 = document.getElementsByClassName("plus-hundred")[0];
 let counter = document.getElementsByClassName("number-displayed")[0];
 let reset = document.getElementById("buttonReset");
+let resetIcon = document.getElementsByClassName("fa-window-restore")[0];
 let minus = document.getElementsByClassName("minus-one")[0];
 let minusIcon = document.getElementsByClassName("fa-minus")[0];
 let minus10 = document.getElementsByClassName("minus-ten")[0];
@@ -88,9 +89,11 @@ function checkStyle() {
 }
 
 function buttonClick(event) {
-    console.log(event.target)
     switch (event.target) {
         case reset:
+            counter.textContent = 0;
+            break;
+        case resetIcon:
             counter.textContent = 0;
             break;
         case plus:
