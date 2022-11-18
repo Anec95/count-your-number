@@ -1,46 +1,18 @@
-function create() {
-    const minusButton = document.createElement("button");
-    const minusCont = document.getElementsByClassName("minus-container")[0]; 
-    minusButton.setAttribute('class', 'minus-one');
-    minusCont.appendChild(minusButton);
-    minusButton.innerHTML = '<i class="fa fa-minus"></i>';
-
-    const minusButton10 = document.createElement("button");
-    const lessCont = document.getElementsByClassName("less")[0]; 
-    minusButton10.setAttribute('class', 'minus-ten');
-    lessCont.appendChild(minusButton10);
-    minusButton10.innerHTML = '10';
-
-    const minusButton100 = document.createElement("button"); 
-    minusButton100.setAttribute('class', 'minus-hundred');
-    lessCont.appendChild(minusButton100);
-    minusButton100.innerHTML = '100';
-
-    const plusButton = document.createElement("button");
-    const plusCont = document.getElementsByClassName("plus-container")[0];
-    plusButton.setAttribute('class', 'plus-one');
-    plusCont.appendChild(plusButton);
-    plusButton.innerHTML = '<i class="fa fa-plus">';
-
-    const plusButton10 = document.createElement("button");
-    const moreCont = document.getElementsByClassName("more")[0];
-    plusButton10.setAttribute('class', 'plus-ten');
-    moreCont.appendChild(plusButton10);
-    plusButton10.innerHTML = '10';
-
-    const plusButton100 = document.createElement("button");
-    plusButton100.setAttribute('class', 'plus-hundred');
-    moreCont.appendChild(plusButton100);
-    plusButton100.innerHTML = '100';
-
-    const numberDisplay = document.createElement("p");
-    const counterCont = document.getElementById("numberContainer");
-    numberDisplay.setAttribute('class', 'number-displayed');
-    counterCont.appendChild(numberDisplay);
-    numberDisplay.innerHTML = 0;
+function create(type, container, nameClass, whatsInside) {
+    const min_plus = document.createElement(type);
+    const min_plus_cont = document.getElementsByClassName(container)[0]; 
+    min_plus.setAttribute('class', nameClass);
+    min_plus_cont.appendChild(min_plus);
+    min_plus.innerHTML = whatsInside;
 }
 
-create()
+create("button", "minus-container", "minus-one", '<i class="fa fa-minus"></i>')
+create("button", "less", "minus-ten", "10")
+create("button", "less", "minus-hundred", "100")
+create("button", "plus-container", "plus-one", '<i class="fa fa-plus">')
+create("button", "more", "plus-ten", "10")
+create("button", "more", "plus-hundred", "100")
+create("p", "number-container", "number-displayed", 0)
 
 let plus = document.getElementsByClassName("plus-one")[0];
 let plusIcon = document.getElementsByClassName("fa-plus")[0];
